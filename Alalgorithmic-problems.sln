@@ -3,7 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1705.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alalgorithmic-problems", "Alalgorithmic-problems\Alalgorithmic-problems.csproj", "{BCE07A6A-881F-4C51-921F-AB8C35B6D0EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alalgorithmic.Test", "Alalgorithmic.Test\Alalgorithmic.Test.csproj", "{374F732C-1B2A-4D46-A8E5-EAE71BF1DAF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alalgorithmic.Program", "Alalgorithmic.Program\Alalgorithmic.Program.csproj", "{9C8B0D47-2213-444C-990F-EB39ED4AEA4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alalgorithmic.Lib", "Alalgorithmic.Lib\Alalgorithmic.Lib.csproj", "{385FC49F-8742-4DA4-AEF7-22458402BE27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9FA73400-4060-410C-9052-6EA0F1ECC3F6}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		LICENSE = LICENSE
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +22,29 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BCE07A6A-881F-4C51-921F-AB8C35B6D0EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BCE07A6A-881F-4C51-921F-AB8C35B6D0EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BCE07A6A-881F-4C51-921F-AB8C35B6D0EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BCE07A6A-881F-4C51-921F-AB8C35B6D0EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{374F732C-1B2A-4D46-A8E5-EAE71BF1DAF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{374F732C-1B2A-4D46-A8E5-EAE71BF1DAF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{374F732C-1B2A-4D46-A8E5-EAE71BF1DAF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{374F732C-1B2A-4D46-A8E5-EAE71BF1DAF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C8B0D47-2213-444C-990F-EB39ED4AEA4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C8B0D47-2213-444C-990F-EB39ED4AEA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C8B0D47-2213-444C-990F-EB39ED4AEA4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C8B0D47-2213-444C-990F-EB39ED4AEA4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{385FC49F-8742-4DA4-AEF7-22458402BE27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{385FC49F-8742-4DA4-AEF7-22458402BE27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{385FC49F-8742-4DA4-AEF7-22458402BE27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{385FC49F-8742-4DA4-AEF7-22458402BE27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {72E6BC44-7D53-465C-8381-D438A64CA3D2}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$1.ResourceNamePolicy = MSBuild
 	EndGlobalSection
 EndGlobal
