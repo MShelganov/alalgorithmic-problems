@@ -16,4 +16,7 @@
     <PackageReference Include="NUnit.Analyzers" Version="3.6.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Alalgorithmic.Lib\Alalgorithmic.Lib.csproj" />
+  </ItemGroup>
 </Project>
