@@ -38,31 +38,27 @@ namespace Alalgorithmic.Lib
 
             var number = new StringBuilder();
             var word = new StringBuilder();
-            var isStart = false;
-            foreach (var one in message)
+            var i = 0;
+            while (i < message.Length)
             {
-                if (int.TryParse(one.ToString(), out var result))
+                while (char.IsDigit(message[i]))
                 {
-                    if (isStart)
-                    {
-                        if (int.Parse(number.ToString()) != word.ToString().Length)
-                            return false;
+                    number.Append(message[i]);
+                    i++;
+                }
 
-                        number.Clear();
-                        number.Append(one);
-                        word.Clear();
-                        isStart = false;
-                    }
-                    else
-                    {
-                        number.Append(one);
-                    }
-                }
-                else
+                while (i < message.Length
+                    && char.IsLetter(message[i]))
                 {
-                    isStart = true;
-                    word.Append(one);
+                    word.Append(message[i]);
+                    i++;
                 }
+
+                if (int.Parse(number.ToString()) != word.ToString().Length)
+                    return false;
+
+                number.Clear();
+                word.Clear();
             }
 
             return true;
