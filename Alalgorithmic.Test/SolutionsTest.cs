@@ -52,6 +52,16 @@ namespace Alalgorithmic.Test
                 Assert.That(Solution.IsMatch("abc", ".b."), Is.True);
             });
         }
+
+        [Test]
+        public void MaxAreaTest()
+        {
+            Assert.Multiple(() =>
+            {
+                Assert.That(Solution.MaxArea(new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 }), Is.EqualTo(49));
+                Assert.That(Solution.MaxArea(new int[] { 1, 1 }), Is.EqualTo(1));
+            });
+        }
     }
 }
 
